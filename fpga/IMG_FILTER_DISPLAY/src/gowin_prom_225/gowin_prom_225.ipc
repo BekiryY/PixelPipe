@@ -1,0 +1,15 @@
+[General]
+ipc_version=4
+file=gowin_prom_225
+module=Gowin_pROM_225
+target_device=gw2a18c-011
+type=ram_prom
+version=1.0
+
+[Config]
+DEPTH=3896
+LANG=0
+MEM_FILE=../lenna_225_225_grayscale.mi
+READ=1
+RESET_MODE=false
+WIDTH=104

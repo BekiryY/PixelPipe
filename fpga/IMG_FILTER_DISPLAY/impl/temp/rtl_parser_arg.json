@@ -2,31 +2,35 @@
  "Device" : "GW2A-18C",
  "Files" : [
   {
-   "Path" : "C:/Users/BEK/repos/customGPU/fpga/IMG_FILTER_DISPLAY/src/DEMO_V01_TOP.sv",
+   "Path" : "C:/Users/BEK/repos/PixelPipe/fpga/IMG_FILTER_DISPLAY/src/DEMO_V01_TOP.sv",
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/Users/BEK/repos/customGPU/fpga/IMG_FILTER_DISPLAY/src/dvi_tx/dvi_tx.v",
+   "Path" : "C:/Users/BEK/repos/PixelPipe/fpga/IMG_FILTER_DISPLAY/src/dvi_tx/dvi_tx.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/Users/BEK/repos/customGPU/fpga/IMG_FILTER_DISPLAY/src/gowin_clkdiv/gowin_clkdiv.v",
+   "Path" : "C:/Users/BEK/repos/PixelPipe/fpga/IMG_FILTER_DISPLAY/src/gowin_clkdiv/gowin_clkdiv.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/Users/BEK/repos/customGPU/fpga/IMG_FILTER_DISPLAY/src/gowin_prom/gowin_prom.v",
+   "Path" : "C:/Users/BEK/repos/PixelPipe/fpga/IMG_FILTER_DISPLAY/src/gowin_prom_225/gowin_prom_225.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/Users/BEK/repos/customGPU/fpga/IMG_FILTER_DISPLAY/src/gowin_rpll_21/gowin_rpll_21.v",
+   "Path" : "C:/Users/BEK/repos/PixelPipe/fpga/IMG_FILTER_DISPLAY/src/gowin_prom_290/gowin_prom_290.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/Users/BEK/repos/customGPU/fpga/IMG_FILTER_DISPLAY/src/loader.sv",
+   "Path" : "C:/Users/BEK/repos/PixelPipe/fpga/IMG_FILTER_DISPLAY/src/gowin_rpll_21/gowin_rpll_21.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/Users/BEK/repos/customGPU/fpga/IMG_FILTER_DISPLAY/src/tmds_rPLL/tmds_rPLL.v",
+   "Path" : "C:/Users/BEK/repos/PixelPipe/fpga/IMG_FILTER_DISPLAY/src/loader.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/BEK/repos/PixelPipe/fpga/IMG_FILTER_DISPLAY/src/tmds_rPLL/tmds_rPLL.v",
    "Type" : "verilog"
   }
  ],
@@ -34,7 +38,7 @@
 
  ],
  "LoopLimit" : 2000,
- "ResultFile" : "C:/Users/BEK/repos/customGPU/fpga/IMG_FILTER_DISPLAY/impl/temp/rtl_parser.result",
+ "ResultFile" : "C:/Users/BEK/repos/PixelPipe/fpga/IMG_FILTER_DISPLAY/impl/temp/rtl_parser.result",
  "Top" : "DEMO_V01_TOP",
  "VerilogStd" : "sysv",
  "VhdlStd" : "vhdl_93"

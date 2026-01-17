@@ -4,8 +4,8 @@ import numpy as np
 # 1. Settings
 INPUT_IMAGE = "../photos/lenna.jpeg"
 OUTPUT_FILE = "image_rom.hex"
-TARGET_W = 225  # Resize to fit in FPGA Block RAM
-TARGET_H = 225
+TARGET_W = 290  # Resize to fit in FPGA Block RAM
+TARGET_H = 290
 
 def convert_to_hex():
     # 2. Load Image

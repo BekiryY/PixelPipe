@@ -5,18 +5,18 @@
 //Part Number: GW2A-LV18PG256C8/I7
 //Device: GW2A-18
 //Device Version: C
-//Created Time: Wed Dec 10 22:25:31 2025
+//Created Time: Sat Jan 17 17:38:19 2026
 
 //Change the instance name and port connections to the signal names
 //--------Copy here to design--------
 
-    Gowin_pROM your_instance_name(
-        .dout(dout), //output [7:0] dout
+    Gowin_pROM_225 your_instance_name(
+        .dout(dout), //output [103:0] dout
         .clk(clk), //input clk
         .oce(oce), //input oce
         .ce(ce), //input ce
         .reset(reset), //input reset
-        .ad(ad) //input [15:0] ad
+        .ad(ad) //input [11:0] ad
     );
 
 //--------Copy end-------------------

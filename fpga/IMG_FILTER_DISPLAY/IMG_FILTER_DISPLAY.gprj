@@ -9,7 +9,8 @@
         <File path="src/FILTER.sv" type="file.verilog" enable="0"/>
         <File path="src/dvi_tx/dvi_tx.v" type="file.verilog" enable="1"/>
         <File path="src/gowin_clkdiv/gowin_clkdiv.v" type="file.verilog" enable="1"/>
-        <File path="src/gowin_prom/gowin_prom.v" type="file.verilog" enable="1"/>
+        <File path="src/gowin_prom_225/gowin_prom_225.v" type="file.verilog" enable="1"/>
+        <File path="src/gowin_prom_290/gowin_prom_290.v" type="file.verilog" enable="1"/>
         <File path="src/gowin_rpll/gowin_rpll.v" type="file.verilog" enable="0"/>
         <File path="src/gowin_rpll_21/gowin_rpll_21.v" type="file.verilog" enable="1"/>
         <File path="src/loader.sv" type="file.verilog" enable="1"/>
@@ -19,6 +20,7 @@
         <File path="src/pinmap.cst" type="file.cst" enable="0"/>
         <File path="src/IMG_FILTER_DISPLAY.sdc" type="file.sdc" enable="1"/>
         <File path="src/IMG_FILTER_DISPLAY.rao" type="file.gao" enable="1"/>
-        <File path="src/prom.mi" type="file.other" enable="1"/>
+        <File path="src/lenna_225_225_grayscale.mi" type="file.other" enable="1"/>
+        <File path="src/lenna_290x290_grayscale.mi" type="file.other" enable="1"/>
     </FileList>
 </Project>
