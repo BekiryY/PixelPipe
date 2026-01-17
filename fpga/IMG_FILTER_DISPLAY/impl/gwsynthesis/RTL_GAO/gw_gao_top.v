@@ -53,6 +53,15 @@ module gw_gao(
     \data_out_controlled[2] ,
     \data_out_controlled[1] ,
     \data_out_controlled[0] ,
+    \u_loader/filter_pixel_out[7] ,
+    \u_loader/filter_pixel_out[6] ,
+    \u_loader/filter_pixel_out[5] ,
+    \u_loader/filter_pixel_out[4] ,
+    \u_loader/filter_pixel_out[3] ,
+    \u_loader/filter_pixel_out[2] ,
+    \u_loader/filter_pixel_out[1] ,
+    \u_loader/filter_pixel_out[0] ,
+    \u_loader/filter_o_valid ,
     \run_cnt[24] ,
     rst_n,
     sys_clk,
@@ -116,6 +125,15 @@ input \data_out_controlled[3] ;
 input \data_out_controlled[2] ;
 input \data_out_controlled[1] ;
 input \data_out_controlled[0] ;
+input \u_loader/filter_pixel_out[7] ;
+input \u_loader/filter_pixel_out[6] ;
+input \u_loader/filter_pixel_out[5] ;
+input \u_loader/filter_pixel_out[4] ;
+input \u_loader/filter_pixel_out[3] ;
+input \u_loader/filter_pixel_out[2] ;
+input \u_loader/filter_pixel_out[1] ;
+input \u_loader/filter_pixel_out[0] ;
+input \u_loader/filter_o_valid ;
 input \run_cnt[24] ;
 input rst_n;
 input sys_clk;
@@ -178,6 +196,15 @@ wire \data_out_controlled[3] ;
 wire \data_out_controlled[2] ;
 wire \data_out_controlled[1] ;
 wire \data_out_controlled[0] ;
+wire \u_loader/filter_pixel_out[7] ;
+wire \u_loader/filter_pixel_out[6] ;
+wire \u_loader/filter_pixel_out[5] ;
+wire \u_loader/filter_pixel_out[4] ;
+wire \u_loader/filter_pixel_out[3] ;
+wire \u_loader/filter_pixel_out[2] ;
+wire \u_loader/filter_pixel_out[1] ;
+wire \u_loader/filter_pixel_out[0] ;
+wire \u_loader/filter_o_valid ;
 wire \run_cnt[24] ;
 wire rst_n;
 wire sys_clk;
@@ -256,7 +283,7 @@ ao_top_0  u_la0_top(
     .control(control0[9:0]),
     .trig0_i(\run_cnt[24] ),
     .trig1_i(rst_n),
-    .data_i({\cnt_hor[11] ,\cnt_hor[10] ,\cnt_hor[9] ,\cnt_hor[8] ,\cnt_hor[7] ,\cnt_hor[6] ,\cnt_hor[5] ,\cnt_hor[4] ,\cnt_hor[3] ,\cnt_hor[2] ,\cnt_hor[1] ,\cnt_hor[0] ,\cnt_ver[11] ,\cnt_ver[10] ,\cnt_ver[9] ,\cnt_ver[8] ,\cnt_ver[7] ,\cnt_ver[6] ,\cnt_ver[5] ,\cnt_ver[4] ,\cnt_ver[3] ,\cnt_ver[2] ,\cnt_ver[1] ,\cnt_ver[0] ,tp0_vs_in,tp0_hs_in,tp0_de_in,\u_loader/o_valid ,\u_loader/prom_ce ,\u_loader/prom_dout[7] ,\u_loader/prom_dout[6] ,\u_loader/prom_dout[5] ,\u_loader/prom_dout[4] ,\u_loader/prom_dout[3] ,\u_loader/prom_dout[2] ,\u_loader/prom_dout[1] ,\u_loader/prom_dout[0] ,\u_loader/prom_addr[7] ,\u_loader/prom_addr[6] ,\u_loader/prom_addr[5] ,\u_loader/prom_addr[4] ,\u_loader/prom_addr[3] ,\u_loader/prom_addr[2] ,\u_loader/prom_addr[1] ,\u_loader/prom_addr[0] ,\u_loader/i_next ,\data_out_controlled[7] ,\data_out_controlled[6] ,\data_out_controlled[5] ,\data_out_controlled[4] ,\data_out_controlled[3] ,\data_out_controlled[2] ,\data_out_controlled[1] ,\data_out_controlled[0] }),
+    .data_i({\cnt_hor[11] ,\cnt_hor[10] ,\cnt_hor[9] ,\cnt_hor[8] ,\cnt_hor[7] ,\cnt_hor[6] ,\cnt_hor[5] ,\cnt_hor[4] ,\cnt_hor[3] ,\cnt_hor[2] ,\cnt_hor[1] ,\cnt_hor[0] ,\cnt_ver[11] ,\cnt_ver[10] ,\cnt_ver[9] ,\cnt_ver[8] ,\cnt_ver[7] ,\cnt_ver[6] ,\cnt_ver[5] ,\cnt_ver[4] ,\cnt_ver[3] ,\cnt_ver[2] ,\cnt_ver[1] ,\cnt_ver[0] ,tp0_vs_in,tp0_hs_in,tp0_de_in,\u_loader/o_valid ,\u_loader/prom_ce ,\u_loader/prom_dout[7] ,\u_loader/prom_dout[6] ,\u_loader/prom_dout[5] ,\u_loader/prom_dout[4] ,\u_loader/prom_dout[3] ,\u_loader/prom_dout[2] ,\u_loader/prom_dout[1] ,\u_loader/prom_dout[0] ,\u_loader/prom_addr[7] ,\u_loader/prom_addr[6] ,\u_loader/prom_addr[5] ,\u_loader/prom_addr[4] ,\u_loader/prom_addr[3] ,\u_loader/prom_addr[2] ,\u_loader/prom_addr[1] ,\u_loader/prom_addr[0] ,\u_loader/i_next ,\data_out_controlled[7] ,\data_out_controlled[6] ,\data_out_controlled[5] ,\data_out_controlled[4] ,\data_out_controlled[3] ,\data_out_controlled[2] ,\data_out_controlled[1] ,\data_out_controlled[0] ,\u_loader/filter_pixel_out[7] ,\u_loader/filter_pixel_out[6] ,\u_loader/filter_pixel_out[5] ,\u_loader/filter_pixel_out[4] ,\u_loader/filter_pixel_out[3] ,\u_loader/filter_pixel_out[2] ,\u_loader/filter_pixel_out[1] ,\u_loader/filter_pixel_out[0] ,\u_loader/filter_o_valid }),
     .clk_i(sys_clk)
 );
 

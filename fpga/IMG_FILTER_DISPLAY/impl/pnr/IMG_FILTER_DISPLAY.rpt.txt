@@ -12,27 +12,27 @@
   <Part Number>: GW2A-LV18PG256C8/I7
   <Device>: GW2A-18
   <Device Version>: C
-  <Created Time>:Sat Jan 17 16:33:13 2026
+  <Created Time>:Sat Jan 17 16:44:00 2026
 
 
 2. PnR Details
 
   Running placement:
-    Placement Phase 0: CPU time = 0h 0m 0.252s, Elapsed time = 0h 0m 0.251s
-    Placement Phase 1: CPU time = 0h 0m 0.248s, Elapsed time = 0h 0m 0.248s
-    Placement Phase 2: CPU time = 0h 0m 0.363s, Elapsed time = 0h 0m 0.363s
-    Placement Phase 3: CPU time = 0h 0m 0.857s, Elapsed time = 0h 0m 0.858s
+    Placement Phase 0: CPU time = 0h 0m 0.261s, Elapsed time = 0h 0m 0.261s
+    Placement Phase 1: CPU time = 0h 0m 0.245s, Elapsed time = 0h 0m 0.245s
+    Placement Phase 2: CPU time = 0h 0m 0.393s, Elapsed time = 0h 0m 0.393s
+    Placement Phase 3: CPU time = 0h 0m 0.868s, Elapsed time = 0h 0m 0.867s
     Total Placement: CPU time = 0h 0m 2s, Elapsed time = 0h 0m 2s
  Running routing:
-    Routing Phase 0: CPU time = 0h 0m 0.001s, Elapsed time = 0h 0m 0.001s
-    Routing Phase 1: CPU time = 0h 0m 0.306s, Elapsed time = 0h 0m 0.306s
+    Routing Phase 0: CPU time = 0h 0m 0.002s, Elapsed time = 0h 0m 0.001s
+    Routing Phase 1: CPU time = 0h 0m 0.284s, Elapsed time = 0h 0m 0.285s
     Routing Phase 2: CPU time = 0h 0m 1s, Elapsed time = 0h 0m 1s
     Routing Phase 3: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s
     Total Routing: CPU time = 0h 0m 2s, Elapsed time = 0h 0m 2s
  Generate output files:
     CPU time = 0h 0m 2s, Elapsed time = 0h 0m 2s
 
- Total Time and Memory Usage: CPU time = 0h 0m 6s, Elapsed time = 0h 0m 6s, Peak memory usage = 500MB
+ Total Time and Memory Usage: CPU time = 0h 0m 6s, Elapsed time = 0h 0m 6s, Peak memory usage = 509MB
 
 
 3. Resource Usage Summary
@@ -40,15 +40,15 @@
   --------------------------------------------------------------------------------
   Resources                   | Usage                               | Utilization
   --------------------------------------------------------------------------------
-  Logic                       | 1684/20736                          |  9%
-    --LUT,ALU,ROM16           | 1684(1111 LUT, 573 ALU, 0 ROM16)    | -
+  Logic                       | 1698/20736                          |  9%
+    --LUT,ALU,ROM16           | 1698(1125 LUT, 573 ALU, 0 ROM16)    | -
     --SSRAM(RAM16)            | 0                                   | -
-  Register                    | 922/16173                           |  6%
+  Register                    | 966/16173                           |  6%
     --Logic Register as Latch | 0/15552                             |  0%
-    --Logic Register as FF    | 921/15552                           |  6%
+    --Logic Register as FF    | 965/15552                           |  7%
     --I/O Register as Latch   | 0/621                               |  0%
     --I/O Register as FF      | 1/621                               |  <1%
-  CLS                         | 1242/10368                          |  12%
+  CLS                         | 1260/10368                          |  13%
   I/O Port                    | 19/207                              |  10%
   I/O Buf                     | 15                                  | -
     --Input Buf               | 5                                   | -
@@ -56,8 +56,8 @@
     --Inout Buf               | 0                                   | -
   IOLOGIC                     | 8/207                               | 4%
     --OSER10                  | 4
-  BSRAM                       | 39/46                               | 85%
-    --SDPB                    | 14
+  BSRAM                       | 41/46                               | 90%
+    --SDPB                    | 16
     --pROM                    | 25
   DSP                         | 0.5/24                              | 3%
     --PADD9                   | 1
@@ -88,7 +88,7 @@
   Clock Resource| Usage         | Utilization 
   ------------------------------------------
   PRIMARY       | 4/8           | 50%
-  LW            | 3/8           | 38%
+  LW            | 4/8           | 50%
   GCLK_PIN      | 2/8           | 25%
   CLKDIV        | 1/8           | 13%
   rPLL          | 2/4           | 50%
@@ -101,11 +101,12 @@
   Signal         | Global Clock   | Location
   -------------------------------------------
   clk_i_d        | PRIMARY        |  TR BR
-  pix_clk        | PRIMARY        |  TR TL BR BL
+  pix_clk        | PRIMARY        |  TR TL BR
   sys_clk        | PRIMARY        |  TR TL BR BL
-  gw_gao_inst_0/control0[0]| PRIMARY        |  TR BR BL
+  gw_gao_inst_0/control0[0]| PRIMARY        |  TR TL BR BL
   n36_6          | LW             |  -
   gw_gao_inst_0/gao_jtag_reset| LW             |  -
+  gw_gao_inst_0/u_la0_top/n20_3| LW             |  -
   gw_gao_inst_0/u_la0_top/capture_end_init_Z| LW             |  -
   serial_clk     | HCLK           | BANK0_BANK1_HCLK0
   ===========================================

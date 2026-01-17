@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Module name="DEMO_V01_TOP" Register="49" Lut="114" T_Register="890(49)" T_Alu="496(0)" T_Lut="1119(114)" T_PADD9="1(0)" T_MULT9X9="1(0)" T_Bsram="39(0)">
+<Module name="DEMO_V01_TOP" Register="49" Lut="115" T_Register="934(49)" T_Alu="496(0)" T_Lut="1133(115)" T_PADD9="1(0)" T_MULT9X9="1(0)" T_Bsram="41(0)">
  <SubModule name="u_PLL_3"/>
  <SubModule name="u_PLL_2"/>
- <SubModule name="gw_gao_inst_0" Register="502" Alu="15" Lut="613" Bsram="14" T_Register="502(502)" T_Alu="15(15)" T_Lut="613(613)" T_Bsram="14(14)"/>
- <SubModule name="u_loader" Register="253" Alu="32" Lut="133" PADD9="1" MULT9X9="1" T_Register="266(253)" T_Alu="412(32)" T_Lut="163(133)" T_PADD9="1(1)" T_MULT9X9="1(1)" T_Bsram="25(0)">
+ <SubModule name="gw_gao_inst_0" Register="538" Alu="15" Lut="628" Bsram="16" T_Register="538(538)" T_Alu="15(15)" T_Lut="628(628)" T_Bsram="16(16)"/>
+ <SubModule name="u_loader" Register="261" Alu="32" Lut="131" PADD9="1" MULT9X9="1" T_Register="274(261)" T_Alu="412(32)" T_Lut="161(131)" T_PADD9="1(1)" T_MULT9X9="1(1)" T_Bsram="25(0)">
   <SubModule name="u_gaus_blur_filter" Register="9" Alu="380" T_Register="9(9)" T_Alu="380(380)"/>
   <SubModule name="u_gowin_prom" Register="4" Lut="30" Bsram="25" T_Register="4(4)" T_Lut="30(30)" T_Bsram="25(25)"/>
  </SubModule>

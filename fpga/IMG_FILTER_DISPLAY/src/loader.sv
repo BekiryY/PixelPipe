@@ -13,6 +13,19 @@ module loader #(
     output wire [7:0]  o_data,     // Data output (8-bit grayscale)
     output wire        o_valid     // Data is valid (FIFO not empty)
 );
+    
+    // Output latch to hold stable value
+    reg [7:0] data_latch;
+    wire [7:0] filter_pixel_out;
+    wire       filter_o_valid;
+    
+    assign o_data = data_latch;
+    assign o_valid = filter_o_valid; // Pass through valid signal if needed upstream
+
+    always @(posedge clk or negedge rst_n) begin
+        if (!rst_n) data_latch <= 0;
+        else if (filter_o_valid) data_latch <= filter_pixel_out;
+    end
 
     //-----------------------------------------------------
     // Parameters
@@ -194,15 +207,15 @@ module loader #(
         // Valid when our FSM says so
         .i_valid(filter_valid_in), 
         .window(window),
-        .o_valid(o_valid),
-        .pixel_out(o_data)
+        .o_valid(filter_o_valid),
+        .pixel_out(filter_pixel_out)
     );
 
 
     Gowin_pROM u_gowin_prom (
         .clk(clk),
         .reset(!rst_n),
-        .oce(prom_ce_reg),
+        .oce(1'b1), // oce must be high to enable output register
         .ce(prom_ce_reg),
         .ad(prom_addr),
         .dout(prom_dout)

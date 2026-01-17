@@ -68,6 +68,17 @@
                 <Signal>data_out_controlled[1]</Signal>
                 <Signal>data_out_controlled[0]</Signal>
             </Bus>
+            <Bus capture_enable="true" name="u_loader/filter_pixel_out[7:0]">
+                <Signal>u_loader/filter_pixel_out[7]</Signal>
+                <Signal>u_loader/filter_pixel_out[6]</Signal>
+                <Signal>u_loader/filter_pixel_out[5]</Signal>
+                <Signal>u_loader/filter_pixel_out[4]</Signal>
+                <Signal>u_loader/filter_pixel_out[3]</Signal>
+                <Signal>u_loader/filter_pixel_out[2]</Signal>
+                <Signal>u_loader/filter_pixel_out[1]</Signal>
+                <Signal>u_loader/filter_pixel_out[0]</Signal>
+            </Bus>
+            <Signal capture_enable="true">u_loader/filter_o_valid</Signal>
         </SignalList>
         <Triggers>
             <Trigger index="0">
@@ -117,5 +128,5 @@
             <Expression>M0|M1</Expression>
         </Expressions>
     </AoCore>
-    <GAO_ID>1010001111000110</GAO_ID>
+    <GAO_ID>0110101111111101</GAO_ID>
 </GAO_CONFIG>
