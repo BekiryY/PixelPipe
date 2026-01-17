@@ -9,7 +9,7 @@ version=1.0
 [Config]
 DEPTH=50646
 LANG=0
-READ=0
-RESET_MODE=true
+READ=1
+RESET_MODE=false
 WIDTH=8
 MEM_FILE=../prom.mi

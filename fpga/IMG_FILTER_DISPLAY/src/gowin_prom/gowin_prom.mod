@@ -13,6 +13,6 @@
 -pROM true
 -depth 50646
 -width 8
--read_mode bypass
--reset_mode sync
+-read_mode pipeline
+-reset_mode async
 -init_file C:\Users\BEK\repos\customGPU\fpga\IMG_FILTER_DISPLAY\src\prom.mi

@@ -36,7 +36,6 @@ module gw_gao(
     \u_loader/prom_dout[2] ,
     \u_loader/prom_dout[1] ,
     \u_loader/prom_dout[0] ,
-    \u_loader/prom_valid_q ,
     \u_loader/prom_addr[7] ,
     \u_loader/prom_addr[6] ,
     \u_loader/prom_addr[5] ,
@@ -100,7 +99,6 @@ input \u_loader/prom_dout[3] ;
 input \u_loader/prom_dout[2] ;
 input \u_loader/prom_dout[1] ;
 input \u_loader/prom_dout[0] ;
-input \u_loader/prom_valid_q ;
 input \u_loader/prom_addr[7] ;
 input \u_loader/prom_addr[6] ;
 input \u_loader/prom_addr[5] ;
@@ -163,7 +161,6 @@ wire \u_loader/prom_dout[3] ;
 wire \u_loader/prom_dout[2] ;
 wire \u_loader/prom_dout[1] ;
 wire \u_loader/prom_dout[0] ;
-wire \u_loader/prom_valid_q ;
 wire \u_loader/prom_addr[7] ;
 wire \u_loader/prom_addr[6] ;
 wire \u_loader/prom_addr[5] ;
@@ -259,7 +256,7 @@ ao_top_0  u_la0_top(
     .control(control0[9:0]),
     .trig0_i(\run_cnt[24] ),
     .trig1_i(rst_n),
-    .data_i({\cnt_hor[11] ,\cnt_hor[10] ,\cnt_hor[9] ,\cnt_hor[8] ,\cnt_hor[7] ,\cnt_hor[6] ,\cnt_hor[5] ,\cnt_hor[4] ,\cnt_hor[3] ,\cnt_hor[2] ,\cnt_hor[1] ,\cnt_hor[0] ,\cnt_ver[11] ,\cnt_ver[10] ,\cnt_ver[9] ,\cnt_ver[8] ,\cnt_ver[7] ,\cnt_ver[6] ,\cnt_ver[5] ,\cnt_ver[4] ,\cnt_ver[3] ,\cnt_ver[2] ,\cnt_ver[1] ,\cnt_ver[0] ,tp0_vs_in,tp0_hs_in,tp0_de_in,\u_loader/o_valid ,\u_loader/prom_ce ,\u_loader/prom_dout[7] ,\u_loader/prom_dout[6] ,\u_loader/prom_dout[5] ,\u_loader/prom_dout[4] ,\u_loader/prom_dout[3] ,\u_loader/prom_dout[2] ,\u_loader/prom_dout[1] ,\u_loader/prom_dout[0] ,\u_loader/prom_valid_q ,\u_loader/prom_addr[7] ,\u_loader/prom_addr[6] ,\u_loader/prom_addr[5] ,\u_loader/prom_addr[4] ,\u_loader/prom_addr[3] ,\u_loader/prom_addr[2] ,\u_loader/prom_addr[1] ,\u_loader/prom_addr[0] ,\u_loader/i_next ,\data_out_controlled[7] ,\data_out_controlled[6] ,\data_out_controlled[5] ,\data_out_controlled[4] ,\data_out_controlled[3] ,\data_out_controlled[2] ,\data_out_controlled[1] ,\data_out_controlled[0] }),
+    .data_i({\cnt_hor[11] ,\cnt_hor[10] ,\cnt_hor[9] ,\cnt_hor[8] ,\cnt_hor[7] ,\cnt_hor[6] ,\cnt_hor[5] ,\cnt_hor[4] ,\cnt_hor[3] ,\cnt_hor[2] ,\cnt_hor[1] ,\cnt_hor[0] ,\cnt_ver[11] ,\cnt_ver[10] ,\cnt_ver[9] ,\cnt_ver[8] ,\cnt_ver[7] ,\cnt_ver[6] ,\cnt_ver[5] ,\cnt_ver[4] ,\cnt_ver[3] ,\cnt_ver[2] ,\cnt_ver[1] ,\cnt_ver[0] ,tp0_vs_in,tp0_hs_in,tp0_de_in,\u_loader/o_valid ,\u_loader/prom_ce ,\u_loader/prom_dout[7] ,\u_loader/prom_dout[6] ,\u_loader/prom_dout[5] ,\u_loader/prom_dout[4] ,\u_loader/prom_dout[3] ,\u_loader/prom_dout[2] ,\u_loader/prom_dout[1] ,\u_loader/prom_dout[0] ,\u_loader/prom_addr[7] ,\u_loader/prom_addr[6] ,\u_loader/prom_addr[5] ,\u_loader/prom_addr[4] ,\u_loader/prom_addr[3] ,\u_loader/prom_addr[2] ,\u_loader/prom_addr[1] ,\u_loader/prom_addr[0] ,\u_loader/i_next ,\data_out_controlled[7] ,\data_out_controlled[6] ,\data_out_controlled[5] ,\data_out_controlled[4] ,\data_out_controlled[3] ,\data_out_controlled[2] ,\data_out_controlled[1] ,\data_out_controlled[0] }),
     .clk_i(sys_clk)
 );
 

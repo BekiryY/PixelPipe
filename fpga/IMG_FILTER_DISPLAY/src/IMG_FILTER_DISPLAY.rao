@@ -47,7 +47,6 @@
                 <Signal>u_loader/prom_dout[1]</Signal>
                 <Signal>u_loader/prom_dout[0]</Signal>
             </Bus>
-            <Signal capture_enable="true">u_loader/prom_valid_q</Signal>
             <Bus capture_enable="true" name="u_loader/prom_addr[7:0]">
                 <Signal>u_loader/prom_addr[7]</Signal>
                 <Signal>u_loader/prom_addr[6]</Signal>
@@ -118,5 +117,5 @@
             <Expression>M0|M1</Expression>
         </Expressions>
     </AoCore>
-    <GAO_ID>0111001101110011</GAO_ID>
+    <GAO_ID>1010001111000110</GAO_ID>
 </GAO_CONFIG>

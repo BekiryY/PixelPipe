@@ -5,13 +5,13 @@
     <Device id="GW2A-18C" package="PBGA256" speed="8" partNumber="GW2A-LV18PG256C8/I7"/>
     <FileList>
         <File path="C:\Users\BEK\repos\customGPU\fpga\IMG_FILTER_DISPLAY\src\DEMO_V01_TOP.sv" type="verilog"/>
+        <File path="C:\Users\BEK\repos\customGPU\fpga\IMG_FILTER_DISPLAY\src\GAUS_BLUR_FILTER.sv" type="verilog"/>
         <File path="C:\Users\BEK\repos\customGPU\fpga\IMG_FILTER_DISPLAY\src\dvi_tx\dvi_tx.v" type="verilog"/>
         <File path="C:\Users\BEK\repos\customGPU\fpga\IMG_FILTER_DISPLAY\src\gowin_clkdiv\gowin_clkdiv.v" type="verilog"/>
-        <File path="C:\Users\BEK\repos\customGPU\fpga\IMG_FILTER_DISPLAY\src\gowin_prom\gowin_prom.v" type="verilog"/>
         <File path="C:\Users\BEK\repos\customGPU\fpga\IMG_FILTER_DISPLAY\src\gowin_rpll_21\gowin_rpll_21.v" type="verilog"/>
         <File path="C:\Users\BEK\repos\customGPU\fpga\IMG_FILTER_DISPLAY\src\loader.sv" type="verilog"/>
         <File path="C:\Users\BEK\repos\customGPU\fpga\IMG_FILTER_DISPLAY\src\tmds_rPLL\tmds_rPLL.v" type="verilog"/>
-        <File path="C:\Users\BEK\repos\customGPU\fpga\IMG_FILTER_DISPLAY\src\GAUS_BLUR_FILTER.sv" type="verilog"/>
+        <File path="C:\Users\BEK\repos\customGPU\fpga\IMG_FILTER_DISPLAY\src\gowin_prom\gowin_prom.v" type="verilog"/>
         <File path="B:\Gowin\Gowin_V1.9.11.03_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_crc32.v" type="gao"/>
         <File path="B:\Gowin\Gowin_V1.9.11.03_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_match.v" type="gao"/>
         <File path="B:\Gowin\Gowin_V1.9.11.03_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_mem_ctrl.v" type="gao"/>

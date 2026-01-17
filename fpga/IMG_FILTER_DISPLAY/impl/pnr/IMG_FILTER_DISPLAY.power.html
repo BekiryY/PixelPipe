@@ -89,7 +89,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Created Time</td>
-<td>Sat Jan 10 20:16:07 2026
+<td>Sat Jan 17 16:33:12 2026
 </td>
 </tr>
 <tr>
@@ -161,7 +161,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <table class="summary_table">
 <tr>
 <td class="label">Total Power (mW)</td>
-<td>239.828</td>
+<td>239.867</td>
 </tr>
 <tr>
 <td class="label">Quiescent Power (mW)</td>
@@ -169,14 +169,14 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Dynamic Power (mW)</td>
-<td>117.463</td>
+<td>117.502</td>
 </tr>
 </table>
 <h2><a name="Thermal_Info">Thermal Information:</a></h2>
 <table class="summary_table">
 <tr>
 <td class="label">Junction Temperature</td>
-<td>32.679</td>
+<td>32.681</td>
 </tr>
 <tr>
 <td class="label">Theta JA</td>
@@ -184,7 +184,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Max Allowed Ambient Temperature</td>
-<td>77.321</td>
+<td>77.319</td>
 </tr>
 </table>
 <h2><a name="Supply_Summary">Supply Information:</a></h2>
@@ -199,9 +199,9 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <tr>
 <td>VCC</td>
 <td>1.000</td>
-<td>96.730</td>
+<td>96.769</td>
 <td>69.999</td>
-<td>166.729</td>
+<td>166.767</td>
 </tr>
 <tr>
 <td>VCCX</td>
@@ -236,9 +236,9 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td>Logic</td>
-<td>1.762</td>
+<td>1.639</td>
 <td>NA</td>
-<td>3.657</td>
+<td>3.745</td>
 </tr>
 <tr>
 <td>IO</td>
@@ -258,6 +258,12 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>NA</td>
 <td>NA</td>
 </tr>
+<tr>
+<td>DSP</td>
+<td>0.156
+<td>NA</td>
+<td>1.087
+</tr>
 </table>
 <h2><a name="By_Hierarchy">Power By Hierarchy:</a></h2>
 <table class="detail_table">
@@ -268,20 +274,20 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td>DEMO_V01_TOP</td>
-<td>93.289</td>
-<td>93.289(93.253)</td>
+<td>93.321</td>
+<td>93.321(93.286)</td>
 <tr>
 <td>DEMO_V01_TOP/gw_gao_inst_0/</td>
-<td>43.741</td>
-<td>43.741(43.741)</td>
+<td>43.739</td>
+<td>43.739(43.739)</td>
 <tr>
 <td>DEMO_V01_TOP/gw_gao_inst_0/u_icon_top/</td>
 <td>0.005</td>
 <td>0.005(0.000)</td>
 <tr>
 <td>DEMO_V01_TOP/gw_gao_inst_0/u_la0_top/</td>
-<td>43.736</td>
-<td>43.736(43.607)</td>
+<td>43.734</td>
+<td>43.734(43.607)</td>
 <tr>
 <td>DEMO_V01_TOP/gw_gao_inst_0/u_la0_top/u_ao_crc32/</td>
 <td>0.010</td>
@@ -328,16 +334,16 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>2.633(0.000)</td>
 <tr>
 <td>DEMO_V01_TOP/u_loader/</td>
-<td>7.509</td>
-<td>7.509(7.260)</td>
+<td>7.543</td>
+<td>7.543(7.264)</td>
 <tr>
 <td>DEMO_V01_TOP/u_loader/u_gaus_blur_filter/</td>
 <td>0.731</td>
 <td>0.731(0.000)</td>
 <tr>
-<td>DEMO_V01_TOP/u_loader/u_prom/</td>
-<td>6.529</td>
-<td>6.529(0.000)</td>
+<td>DEMO_V01_TOP/u_loader/u_gowin_prom/</td>
+<td>6.533</td>
+<td>6.533(0.000)</td>
 </table>
 <h2><a name="By_Clock_Domain">Power By Clock Domain:</a></h2>
 <table class="detail_table">
@@ -347,29 +353,29 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <th class="label">Total Dynamic Power(mW)</th>
 </tr>
 <tr>
-<td>u_PLL_3/rpll_inst/CLKOUT.default_gen_clk</td>
-<td>25.169</td>
-<td>31.868</td>
-</tr>
-<tr>
 <td>tck_pad_i</td>
 <td>20.000</td>
-<td>19.417</td>
+<td>19.415</td>
+</tr>
+<tr>
+<td>u_PLL_3/rpll_inst/CLKOUT.default_gen_clk</td>
+<td>25.169</td>
+<td>31.903</td>
 </tr>
 <tr>
 <td>u_CLKDIV/CLKOUT.default_gen_clk</td>
 <td>74.250</td>
-<td>0.545</td>
-</tr>
-<tr>
-<td>clk_i</td>
-<td>27.000</td>
-<td>38.853</td>
+<td>0.550</td>
 </tr>
 <tr>
 <td>NO CLOCK DOMAIN</td>
 <td>0.000</td>
 <td>0.000</td>
+</tr>
+<tr>
+<td>clk_i</td>
+<td>27.000</td>
+<td>38.854</td>
 </tr>
 <tr>
 <td>u_PLL_2/rpll_inst/CLKOUT.default_gen_clk</td>

@@ -5,7 +5,7 @@
 //Part Number: GW2A-LV18PG256C8/I7
 //Device: GW2A-18
 //Device Version: C
-//Created Time: Wed Dec 10 22:25:31 2025
+//Created Time: Sat Jan 17 16:31:04 2026
 
 module Gowin_pROM (dout, clk, oce, ce, reset, ad);
 
@@ -73,6 +73,8 @@ wire [23:0] prom_inst_24_dout_w;
 wire [7:0] prom_inst_24_dout;
 wire dff_q_0;
 wire dff_q_1;
+wire dff_q_2;
+wire dff_q_3;
 wire mux_o_12;
 wire mux_o_13;
 wire mux_o_27;
@@ -138,9 +140,9 @@ pROM prom_inst_0 (
     .AD(ad[13:0])
 );
 
-defparam prom_inst_0.READ_MODE = 1'b0;
+defparam prom_inst_0.READ_MODE = 1'b1;
 defparam prom_inst_0.BIT_WIDTH = 1;
-defparam prom_inst_0.RESET_MODE = "SYNC";
+defparam prom_inst_0.RESET_MODE = "ASYNC";
 defparam prom_inst_0.INIT_RAM_00 = 256'hC8F300ACB0B4B4896FF873435E56A804B7FFFF18000064726E8B451A6ADF9AD0;
 defparam prom_inst_0.INIT_RAM_01 = 256'hA4DB7FEC7D81831931634F6EAFF1836772AD10093FFFF7100000C1C4DEBE9008;
 defparam prom_inst_0.INIT_RAM_02 = 256'hC0031C6CB465D71C3FF8EABB62CD27719FFE7A647251601B7FFFE71FE001831C;
@@ -215,9 +217,9 @@ pROM prom_inst_1 (
     .AD(ad[13:0])
 );
 
-defparam prom_inst_1.READ_MODE = 1'b0;
+defparam prom_inst_1.READ_MODE = 1'b1;
 defparam prom_inst_1.BIT_WIDTH = 1;
-defparam prom_inst_1.RESET_MODE = "SYNC";
+defparam prom_inst_1.RESET_MODE = "ASYNC";
 defparam prom_inst_1.INIT_RAM_00 = 256'hF2542B7F07E2453120E1511FEF19BC778A0917EFFBAD2FF5D00807FFFD2381A8;
 defparam prom_inst_1.INIT_RAM_01 = 256'h7FE01FE013A7053A06B179C4E5AE851F1FB909064E1B073FF75A5FF5C0100FFF;
 defparam prom_inst_1.INIT_RAM_02 = 256'hDD69001F003FC00014F7C125A8153FCC769B7F853807795EFEE6BB7FEEB496B4;
@@ -292,9 +294,9 @@ pROM prom_inst_2 (
     .AD(ad[13:0])
 );
 
-defparam prom_inst_2.READ_MODE = 1'b0;
+defparam prom_inst_2.READ_MODE = 1'b1;
 defparam prom_inst_2.BIT_WIDTH = 1;
-defparam prom_inst_2.RESET_MODE = "SYNC";
+defparam prom_inst_2.RESET_MODE = "ASYNC";
 defparam prom_inst_2.INIT_RAM_00 = 256'hDC6F093738C0C3909FF80C7B9BAE67FB8807F8FFFFF8787B4DE386366497812F;
 defparam prom_inst_2.INIT_RAM_01 = 256'h325C672528DF831E31838EF58FF07386455C8FF7000FF0FFFFF0F1F6996F1C64;
 defparam prom_inst_2.INIT_RAM_02 = 256'h3FC3DFB6D0F9D976A947E6BC630E287FFFE1FC7503B31FE7001FE0E01FE1E3F9;
@@ -369,9 +371,9 @@ pROM prom_inst_3 (
     .AD(ad[13:0])
 );
 
-defparam prom_inst_3.READ_MODE = 1'b0;
+defparam prom_inst_3.READ_MODE = 1'b1;
 defparam prom_inst_3.BIT_WIDTH = 1;
-defparam prom_inst_3.RESET_MODE = "SYNC";
+defparam prom_inst_3.RESET_MODE = "ASYNC";
 defparam prom_inst_3.INIT_RAM_00 = 256'h0AB38EDFF3EC837144BA54CAA84268F58FC71A0FF7612A5DB0080000068F8997;
 defparam prom_inst_3.INIT_RAM_01 = 256'h0020001FFF50C2AE911D9E19309B0F1FCC1BBACAB89B8BDFEEC254B140100000;
 defparam prom_inst_3.INIT_RAM_02 = 256'hBB092D32FFFFC03FF6AC3B7C64D9CAD4DDA1E34F62D5ACAC66653D7FDD848029;
@@ -446,9 +448,9 @@ pROM prom_inst_4 (
     .AD(ad[13:0])
 );
 
-defparam prom_inst_4.READ_MODE = 1'b0;
+defparam prom_inst_4.READ_MODE = 1'b1;
 defparam prom_inst_4.BIT_WIDTH = 1;
-defparam prom_inst_4.RESET_MODE = "SYNC";
+defparam prom_inst_4.RESET_MODE = "ASYNC";
 defparam prom_inst_4.INIT_RAM_00 = 256'h602F0237C7070121580007813031E0007FF807FFFFFF8783891C03E1B0B783D3;
 defparam prom_inst_4.INIT_RAM_01 = 256'h242068A2505F923FCE0C0C37C0000C0220638000FFF00FFFFFFF0E07121017C3;
 defparam prom_inst_4.INIT_RAM_02 = 256'hFFFC2038D801C070F0FFD03F9C1036AD0000006D30CF0000FFE01FFFFFFE1C1E;
@@ -523,9 +525,9 @@ pROM prom_inst_5 (
     .AD(ad[13:0])
 );
 
-defparam prom_inst_5.READ_MODE = 1'b0;
+defparam prom_inst_5.READ_MODE = 1'b1;
 defparam prom_inst_5.BIT_WIDTH = 1;
-defparam prom_inst_5.RESET_MODE = "SYNC";
+defparam prom_inst_5.RESET_MODE = "ASYNC";
 defparam prom_inst_5.INIT_RAM_00 = 256'hFF30ED1CF010FF0D226355D97F5115F991AAE4700047E99F1007FFFFF9DB4811;
 defparam prom_inst_5.INIT_RAM_01 = 256'h801FFFFFF857A905F6C1FFF8EEB4AE0F951CE6A925A34500008FD334000FFFFF;
 defparam prom_inst_5.INIT_RAM_02 = 256'h023F1E1500003FFFF2D8266CDDA1F30F15D889F0AE9F728D21A93B40011F8F2A;
@@ -600,9 +602,9 @@ pROM prom_inst_6 (
     .AD(ad[13:0])
 );
 
-defparam prom_inst_6.READ_MODE = 1'b0;
+defparam prom_inst_6.READ_MODE = 1'b1;
 defparam prom_inst_6.BIT_WIDTH = 1;
-defparam prom_inst_6.RESET_MODE = "SYNC";
+defparam prom_inst_6.RESET_MODE = "ASYNC";
 defparam prom_inst_6.INIT_RAM_00 = 256'h8FEF0217FFFFFDD607FFFFFF22EFE0000000000000000003F1FFFB0FC7778463;
 defparam prom_inst_6.INIT_RAM_01 = 256'hC7FF8C1F9FDF8F0FFFFFF1285FFFFFFE45DF80000000000000000007E3FFE61F;
 defparam prom_inst_6.INIT_RAM_02 = 256'h0000003F1FFE180F3FFFED7FFFFFC8F27FFFFF9DBBBF0000000000000000001F;
@@ -677,9 +679,9 @@ pROM prom_inst_7 (
     .AD(ad[13:0])
 );
 
-defparam prom_inst_7.READ_MODE = 1'b0;
+defparam prom_inst_7.READ_MODE = 1'b1;
 defparam prom_inst_7.BIT_WIDTH = 1;
-defparam prom_inst_7.RESET_MODE = "SYNC";
+defparam prom_inst_7.RESET_MODE = "ASYNC";
 defparam prom_inst_7.INIT_RAM_00 = 256'hF0968E458FFF0F003B2921CDDC04F3FAE49BE7A0007687EB500FFFFFFBED9303;
 defparam prom_inst_7.INIT_RAM_01 = 256'h003FFFFFEB5D8B2DBC5E1FF4A98AF6DCE290218850A3364000ED0FDC801FFFFF;
 defparam prom_inst_7.INIT_RAM_02 = 256'h03B47FB2007FFFFFD5802B5751BE03C16AFCF2E45477C1AC6230EDC001DA3FF9;
@@ -754,9 +756,9 @@ pROM prom_inst_8 (
     .AD(ad[13:0])
 );
 
-defparam prom_inst_8.READ_MODE = 1'b0;
+defparam prom_inst_8.READ_MODE = 1'b1;
 defparam prom_inst_8.BIT_WIDTH = 1;
-defparam prom_inst_8.RESET_MODE = "SYNC";
+defparam prom_inst_8.RESET_MODE = "ASYNC";
 defparam prom_inst_8.INIT_RAM_00 = 256'h0FEF0EF7FFFFFE37FFFFFFFF3B1FE0000000000000000003FE00035807F7842A;
 defparam prom_inst_8.INIT_RAM_01 = 256'hF8000D601FDF99FFFFFFFE6FBFFFFFFE763F80000000000000000007FC0006B0;
 defparam prom_inst_8.INIT_RAM_02 = 256'h0000003FE0001AC03FFFE1FFFFFFFC9F3FFFFFFDDC7F0000000000000000001F;
@@ -831,9 +833,9 @@ pROM prom_inst_9 (
     .AD(ad[13:0])
 );
 
-defparam prom_inst_9.READ_MODE = 1'b0;
+defparam prom_inst_9.READ_MODE = 1'b1;
 defparam prom_inst_9.BIT_WIDTH = 1;
-defparam prom_inst_9.RESET_MODE = "SYNC";
+defparam prom_inst_9.RESET_MODE = "ASYNC";
 defparam prom_inst_9.INIT_RAM_00 = 256'hFFEF70EDE0000F01EB2869C1647E6003811CFCE00079200D900FFFFFFF165255;
 defparam prom_inst_9.INIT_RAM_01 = 256'h003FFFFFF66E764A78201FF16740060FDF92607311AD31C000F24019001FFFFF;
 defparam prom_inst_9.INIT_RAM_02 = 256'h03C90024007FFFFFEF7FD0334E4003C1ADFF8E5709B54057221C62C001E48032;
@@ -908,9 +910,9 @@ pROM prom_inst_10 (
     .AD(ad[13:0])
 );
 
-defparam prom_inst_10.READ_MODE = 1'b0;
+defparam prom_inst_10.READ_MODE = 1'b1;
 defparam prom_inst_10.BIT_WIDTH = 1;
-defparam prom_inst_10.RESET_MODE = "SYNC";
+defparam prom_inst_10.RESET_MODE = "ASYNC";
 defparam prom_inst_10.INIT_RAM_00 = 256'hF010F4F7FFFFFFE010000000C3FFE0000000000000000003FFFFFCC7F8087AF5;
 defparam prom_inst_10.INIT_RAM_01 = 256'hFFFFF31FE0206DFFFFFFFFC02000000187FF80000000000000000007FFFFF98F;
 defparam prom_inst_10.INIT_RAM_02 = 256'h0000003FFFFFE63FC00001FFFFFFFFC0400000021FFF0000000000000000001F;
@@ -985,9 +987,9 @@ pROM prom_inst_11 (
     .AD(ad[13:0])
 );
 
-defparam prom_inst_11.READ_MODE = 1'b0;
+defparam prom_inst_11.READ_MODE = 1'b1;
 defparam prom_inst_11.BIT_WIDTH = 1;
-defparam prom_inst_11.RESET_MODE = "SYNC";
+defparam prom_inst_11.RESET_MODE = "ASYNC";
 defparam prom_inst_11.INIT_RAM_00 = 256'h00BFFFA200000F01E4D79E368380000381F81C1FFF809FF1EFF00000005FDF0C;
 defparam prom_inst_11.INIT_RAM_01 = 256'hFFC0000000FFFD9980001FF1E83FF9F1C06C00031160F03FFF013FE1FFE00000;
 defparam prom_inst_11.INIT_RAM_02 = 256'hFC04FFC7FF800000017FFEEE800003C1E80071AC2FC900072383E03FFE027FC3;
@@ -1062,9 +1064,9 @@ pROM prom_inst_12 (
     .AD(ad[13:0])
 );
 
-defparam prom_inst_12.READ_MODE = 1'b0;
+defparam prom_inst_12.READ_MODE = 1'b1;
 defparam prom_inst_12.BIT_WIDTH = 1;
-defparam prom_inst_12.RESET_MODE = "SYNC";
+defparam prom_inst_12.RESET_MODE = "ASYNC";
 defparam prom_inst_12.INIT_RAM_00 = 256'h000000F7FFFFFFEFE000000003FFE0000000000000000003FFFFFFC0000004EA;
 defparam prom_inst_12.INIT_RAM_01 = 256'hFFFFFF00000001FFFFFFFFDFC000000007FF80000000000000000007FFFFFF80;
 defparam prom_inst_12.INIT_RAM_02 = 256'h0000003FFFFFFE00000021FFFFFFFFBF800000001FFF0000000000000000001F;
@@ -1139,9 +1141,9 @@ pROM prom_inst_13 (
     .AD(ad[13:0])
 );
 
-defparam prom_inst_13.READ_MODE = 1'b0;
+defparam prom_inst_13.READ_MODE = 1'b1;
 defparam prom_inst_13.BIT_WIDTH = 1;
-defparam prom_inst_13.RESET_MODE = "SYNC";
+defparam prom_inst_13.RESET_MODE = "ASYNC";
 defparam prom_inst_13.INIT_RAM_00 = 256'h00C000401FFFF0FE100000000000000381F803FFFFFF8001FFF00000006020E0;
 defparam prom_inst_13.INIT_RAM_01 = 256'hFFC00000008001D81FFFE00E10000007C000000311E00FFFFFFF0001FFE00000;
 defparam prom_inst_13.INIT_RAM_02 = 256'hFFFC0007FF800000018001BE3FFFFC3E1000000C0FC1000723801FFFFFFE0003;
@@ -1216,9 +1218,9 @@ pROM prom_inst_14 (
     .AD(ad[13:0])
 );
 
-defparam prom_inst_14.READ_MODE = 1'b0;
+defparam prom_inst_14.READ_MODE = 1'b1;
 defparam prom_inst_14.BIT_WIDTH = 1;
-defparam prom_inst_14.RESET_MODE = "SYNC";
+defparam prom_inst_14.RESET_MODE = "ASYNC";
 defparam prom_inst_14.INIT_RAM_00 = 256'hFFFFFF080000001FFFFFFFFFFC001FFFFFFFFFFFFFFFFFFC0000003FFFFFFCE3;
 defparam prom_inst_14.INIT_RAM_01 = 256'h000000FFFFFFFE000000003FFFFFFFFFF8007FFFFFFFFFFFFFFFFFF80000007F;
 defparam prom_inst_14.INIT_RAM_02 = 256'hFFFFFFC0000001FFFFFFDE000000007FFFFFFFFFE000FFFFFFFFFFFFFFFFFFE0;
@@ -1293,9 +1295,9 @@ pROM prom_inst_15 (
     .AD(ad[13:0])
 );
 
-defparam prom_inst_15.READ_MODE = 1'b0;
+defparam prom_inst_15.READ_MODE = 1'b1;
 defparam prom_inst_15.BIT_WIDTH = 1;
-defparam prom_inst_15.RESET_MODE = "SYNC";
+defparam prom_inst_15.RESET_MODE = "ASYNC";
 defparam prom_inst_15.INIT_RAM_00 = 256'hFF0000FFFFFFFFFFFFFFFFFFFFFFFFFC7E07FF0000007FFE000FFFFFFF80007F;
 defparam prom_inst_15.INIT_RAM_01 = 256'h003FFFFFFF0000E7FFFFFFFFFFFFFFF83FFFFFFCEE1FFE000000FFFE001FFFFF;
 defparam prom_inst_15.INIT_RAM_02 = 256'h0003FFF8007FFFFFFE0001C1FFFFFFFFFFFFFFF3F03EFFF8DC7FFC000001FFFC;
@@ -1370,9 +1372,9 @@ pROM prom_inst_16 (
     .AD(ad[13:0])
 );
 
-defparam prom_inst_16.READ_MODE = 1'b0;
+defparam prom_inst_16.READ_MODE = 1'b1;
 defparam prom_inst_16.BIT_WIDTH = 1;
-defparam prom_inst_16.RESET_MODE = "SYNC";
+defparam prom_inst_16.RESET_MODE = "ASYNC";
 defparam prom_inst_16.INIT_RAM_00 = 256'hF00132572FC82D3BE45318767F5779886D91D02AEFF005731C72ACA90D69988A;
 defparam prom_inst_16.INIT_RAM_01 = 256'h8C34FBE4E41CDAEAD31F627EB9EA04704688064F9B21D8B5FFE00E839C7568DB;
 defparam prom_inst_16.INIT_RAM_02 = 256'h00003BA50E2A4F0B41B962C0E5DFCB083D757AE5CA068DD8B670B163C0001B71;
@@ -1447,9 +1449,9 @@ pROM prom_inst_17 (
     .AD(ad[13:0])
 );
 
-defparam prom_inst_17.READ_MODE = 1'b0;
+defparam prom_inst_17.READ_MODE = 1'b1;
 defparam prom_inst_17.BIT_WIDTH = 1;
-defparam prom_inst_17.RESET_MODE = "SYNC";
+defparam prom_inst_17.RESET_MODE = "ASYNC";
 defparam prom_inst_17.INIT_RAM_00 = 256'h89933A65A54D4B40F75856E59A654F12A71B607D100002978C0E61278A60629C;
 defparam prom_inst_17.INIT_RAM_01 = 256'hFC0DCE85E03204E576EA76907E26B813C6F56ACACE34F705E0000B641C0CE2A7;
 defparam prom_inst_17.INIT_RAM_02 = 256'h7F8020777E198CFAF53EFE1563EA6649199C7E6C579404311C6AEE7C7FC00604;
@@ -1524,9 +1526,9 @@ pROM prom_inst_18 (
     .AD(ad[13:0])
 );
 
-defparam prom_inst_18.READ_MODE = 1'b0;
+defparam prom_inst_18.READ_MODE = 1'b1;
 defparam prom_inst_18.BIT_WIDTH = 1;
-defparam prom_inst_18.RESET_MODE = "SYNC";
+defparam prom_inst_18.RESET_MODE = "ASYNC";
 defparam prom_inst_18.INIT_RAM_00 = 256'hCD5F82BDFCD18D952A0747968C84ABA0256274B640000956F3FE14F41920FCBD;
 defparam prom_inst_18.INIT_RAM_01 = 256'h03FC382CDF356976B1CC7B0BB740BAD2A59265DF8AC6D96940001695E3FC19E3;
 defparam prom_inst_18.INIT_RAM_02 = 256'h80007F4A01F861830C2E2D55E073F43FCB2898E6D6D24231158CB2A6800031CF;
@@ -1601,9 +1603,9 @@ pROM prom_inst_19 (
     .AD(ad[13:0])
 );
 
-defparam prom_inst_19.READ_MODE = 1'b0;
+defparam prom_inst_19.READ_MODE = 1'b1;
 defparam prom_inst_19.BIT_WIDTH = 1;
-defparam prom_inst_19.RESET_MODE = "SYNC";
+defparam prom_inst_19.RESET_MODE = "ASYNC";
 defparam prom_inst_19.INIT_RAM_00 = 256'hD5D2F642E3DE0E164EA7425C25AD3E354EA39EAFC0000D2CC001FE7F36C00A92;
 defparam prom_inst_19.INIT_RAM_01 = 256'h0003F088ED27E76CCFF07C0CED2E84688446D5079D472D5EC0001A718003FCD3;
 defparam prom_inst_19.INIT_RAM_02 = 256'h0000710E0007F025D81CE2721F83F811DD60363E88AD29D3BA8F5A99800038C7;
@@ -1678,9 +1680,9 @@ pROM prom_inst_20 (
     .AD(ad[13:0])
 );
 
-defparam prom_inst_20.READ_MODE = 1'b0;
+defparam prom_inst_20.READ_MODE = 1'b1;
 defparam prom_inst_20.BIT_WIDTH = 1;
-defparam prom_inst_20.RESET_MODE = "SYNC";
+defparam prom_inst_20.RESET_MODE = "ASYNC";
 defparam prom_inst_20.INIT_RAM_00 = 256'h92ED8F021FDFF01751B4017588F08E02509C1A203FFFF1253FFFFFA8197F861D;
 defparam prom_inst_20.INIT_RAM_01 = 256'hFFFFFFBC63591D6B3FFF800E837B3B8EC3B536C1A13834403FFFE2427FFFFF1E;
 defparam prom_inst_20.INIT_RAM_02 = 256'hFFFF81C1FFFFFECCC4E21A5FFFFC001D05B274F436D0DAB9C27068807FFFC0A0;
@@ -1755,9 +1757,9 @@ pROM prom_inst_21 (
     .AD(ad[13:0])
 );
 
-defparam prom_inst_21.READ_MODE = 1'b0;
+defparam prom_inst_21.READ_MODE = 1'b1;
 defparam prom_inst_21.BIT_WIDTH = 1;
-defparam prom_inst_21.RESET_MODE = "SYNC";
+defparam prom_inst_21.RESET_MODE = "ASYNC";
 defparam prom_inst_21.INIT_RAM_00 = 256'h50FF810F00200017B7B65E7D0CDE3473A27FE3200000013400000011F87F0198;
 defparam prom_inst_21.INIT_RAM_01 = 256'h000000C1E17E037A0000000F6F7D0A322B687E5244FFC6400000026000000040;
 defparam prom_inst_21.INIT_RAM_02 = 256'h0000018000000097C0FE06740000001EDDFE8F38F640DA9209FF8C80000000C0;
@@ -1832,9 +1834,9 @@ pROM prom_inst_22 (
     .AD(ad[13:0])
 );
 
-defparam prom_inst_22.READ_MODE = 1'b0;
+defparam prom_inst_22.READ_MODE = 1'b1;
 defparam prom_inst_22.BIT_WIDTH = 1;
-defparam prom_inst_22.RESET_MODE = "SYNC";
+defparam prom_inst_22.RESET_MODE = "ASYNC";
 defparam prom_inst_22.INIT_RAM_00 = 256'h2F0080F000000017F8499862B0FFCFC3FE0003DFFFFFFEC40000002887808060;
 defparam prom_inst_22.INIT_RAM_01 = 256'h000000E21E8100840000000FF081BC25FBFF8FB3FC0007BFFFFFFD8000000071;
 defparam prom_inst_22.INIT_RAM_02 = 256'hFFFFFE00000000C03F0001880000001FE2007003D7FF2373F8000F7FFFFFFF00;
@@ -1909,9 +1911,9 @@ pROM prom_inst_23 (
     .AD(ad[13:0])
 );
 
-defparam prom_inst_23.READ_MODE = 1'b0;
+defparam prom_inst_23.READ_MODE = 1'b1;
 defparam prom_inst_23.BIT_WIDTH = 1;
-defparam prom_inst_23.RESET_MODE = "SYNC";
+defparam prom_inst_23.RESET_MODE = "ASYNC";
 defparam prom_inst_23.INIT_RAM_00 = 256'h00007FFFFFFFFFE80000E7804300000C01FFFC001FFFFFFBFFFFFFC700007FFF;
 defparam prom_inst_23.INIT_RAM_01 = 256'hFFFFFF1C0000FFFFFFFFFFF00000C7C00400000C03FFF8003FFFFFFFFFFFFF8E;
 defparam prom_inst_23.INIT_RAM_02 = 256'hFFFFFFFFFFFFFF380001FFFFFFFFFFE000018FC00800040C07FFF0007FFFFFFF;
@@ -1986,9 +1988,9 @@ pROM prom_inst_24 (
     .AD({ad[10:0],gw_gnd,gw_gnd,gw_gnd})
 );
 
-defparam prom_inst_24.READ_MODE = 1'b0;
+defparam prom_inst_24.READ_MODE = 1'b1;
 defparam prom_inst_24.BIT_WIDTH = 8;
-defparam prom_inst_24.RESET_MODE = "SYNC";
+defparam prom_inst_24.RESET_MODE = "ASYNC";
 defparam prom_inst_24.INIT_RAM_00 = 256'h9191918E8E8E8D8D8C8C8C8A89898887868685818181818080807F7E7D7B7976;
 defparam prom_inst_24.INIT_RAM_01 = 256'hBDBAB9B7B5B2ADA9A4A19F9C9B9998959492918F8F8F8F8F8F8F8F9191919191;
 defparam prom_inst_24.INIT_RAM_02 = 256'h6C70706F7173747473706E736E6967655F564E45A6D4D1D6D1D3D1CECCC9C5C1;
@@ -2045,152 +2047,164 @@ DFFE dff_inst_0 (
 );
 DFFE dff_inst_1 (
   .Q(dff_q_1),
+  .D(dff_q_0),
+  .CLK(clk),
+  .CE(oce)
+);
+DFFE dff_inst_2 (
+  .Q(dff_q_2),
   .D(ad[14]),
   .CLK(clk),
   .CE(ce)
+);
+DFFE dff_inst_3 (
+  .Q(dff_q_3),
+  .D(dff_q_2),
+  .CLK(clk),
+  .CE(oce)
 );
 MUX2 mux_inst_12 (
   .O(mux_o_12),
   .I0(prom_inst_0_dout[0]),
   .I1(prom_inst_1_dout[0]),
-  .S0(dff_q_1)
+  .S0(dff_q_3)
 );
 MUX2 mux_inst_13 (
   .O(mux_o_13),
   .I0(prom_inst_16_dout[0]),
   .I1(prom_inst_24_dout[0]),
-  .S0(dff_q_1)
+  .S0(dff_q_3)
 );
 MUX2 mux_inst_14 (
   .O(dout[0]),
   .I0(mux_o_12),
   .I1(mux_o_13),
-  .S0(dff_q_0)
+  .S0(dff_q_1)
 );
 MUX2 mux_inst_27 (
   .O(mux_o_27),
   .I0(prom_inst_2_dout[1]),
   .I1(prom_inst_3_dout[1]),
-  .S0(dff_q_1)
+  .S0(dff_q_3)
 );
 MUX2 mux_inst_28 (
   .O(mux_o_28),
   .I0(prom_inst_17_dout[1]),
   .I1(prom_inst_24_dout[1]),
-  .S0(dff_q_1)
+  .S0(dff_q_3)
 );
 MUX2 mux_inst_29 (
   .O(dout[1]),
   .I0(mux_o_27),
   .I1(mux_o_28),
-  .S0(dff_q_0)
+  .S0(dff_q_1)
 );
 MUX2 mux_inst_42 (
   .O(mux_o_42),
   .I0(prom_inst_4_dout[2]),
   .I1(prom_inst_5_dout[2]),
-  .S0(dff_q_1)
+  .S0(dff_q_3)
 );
 MUX2 mux_inst_43 (
   .O(mux_o_43),
   .I0(prom_inst_18_dout[2]),
   .I1(prom_inst_24_dout[2]),
-  .S0(dff_q_1)
+  .S0(dff_q_3)
 );
 MUX2 mux_inst_44 (
   .O(dout[2]),
   .I0(mux_o_42),
   .I1(mux_o_43),
-  .S0(dff_q_0)
+  .S0(dff_q_1)
 );
 MUX2 mux_inst_57 (
   .O(mux_o_57),
   .I0(prom_inst_6_dout[3]),
   .I1(prom_inst_7_dout[3]),
-  .S0(dff_q_1)
+  .S0(dff_q_3)
 );
 MUX2 mux_inst_58 (
   .O(mux_o_58),
   .I0(prom_inst_19_dout[3]),
   .I1(prom_inst_24_dout[3]),
-  .S0(dff_q_1)
+  .S0(dff_q_3)
 );
 MUX2 mux_inst_59 (
   .O(dout[3]),
   .I0(mux_o_57),
   .I1(mux_o_58),
-  .S0(dff_q_0)
+  .S0(dff_q_1)
 );
 MUX2 mux_inst_72 (
   .O(mux_o_72),
   .I0(prom_inst_8_dout[4]),
   .I1(prom_inst_9_dout[4]),
-  .S0(dff_q_1)
+  .S0(dff_q_3)
 );
 MUX2 mux_inst_73 (
   .O(mux_o_73),
   .I0(prom_inst_20_dout[4]),
   .I1(prom_inst_24_dout[4]),
-  .S0(dff_q_1)
+  .S0(dff_q_3)
 );
 MUX2 mux_inst_74 (
   .O(dout[4]),
   .I0(mux_o_72),
   .I1(mux_o_73),
-  .S0(dff_q_0)
+  .S0(dff_q_1)
 );
 MUX2 mux_inst_87 (
   .O(mux_o_87),
   .I0(prom_inst_10_dout[5]),
   .I1(prom_inst_11_dout[5]),
-  .S0(dff_q_1)
+  .S0(dff_q_3)
 );
 MUX2 mux_inst_88 (
   .O(mux_o_88),
   .I0(prom_inst_21_dout[5]),
   .I1(prom_inst_24_dout[5]),
-  .S0(dff_q_1)
+  .S0(dff_q_3)
 );
 MUX2 mux_inst_89 (
   .O(dout[5]),
   .I0(mux_o_87),
   .I1(mux_o_88),
-  .S0(dff_q_0)
+  .S0(dff_q_1)
 );
 MUX2 mux_inst_102 (
   .O(mux_o_102),
   .I0(prom_inst_12_dout[6]),
   .I1(prom_inst_13_dout[6]),
-  .S0(dff_q_1)
+  .S0(dff_q_3)
 );
 MUX2 mux_inst_103 (
   .O(mux_o_103),
   .I0(prom_inst_22_dout[6]),
   .I1(prom_inst_24_dout[6]),
-  .S0(dff_q_1)
+  .S0(dff_q_3)
 );
 MUX2 mux_inst_104 (
   .O(dout[6]),
   .I0(mux_o_102),
   .I1(mux_o_103),
-  .S0(dff_q_0)
+  .S0(dff_q_1)
 );
 MUX2 mux_inst_117 (
   .O(mux_o_117),
   .I0(prom_inst_14_dout[7]),
   .I1(prom_inst_15_dout[7]),
-  .S0(dff_q_1)
+  .S0(dff_q_3)
 );
 MUX2 mux_inst_118 (
   .O(mux_o_118),
   .I0(prom_inst_23_dout[7]),
   .I1(prom_inst_24_dout[7]),
-  .S0(dff_q_1)
+  .S0(dff_q_3)
 );
 MUX2 mux_inst_119 (
   .O(dout[7]),
   .I0(mux_o_117),
   .I1(mux_o_118),
-  .S0(dff_q_0)
+  .S0(dff_q_1)
 );
 endmodule //Gowin_pROM

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Module name="DEMO_V01_TOP" Register="49" Lut="115" T_Register="874(49)" T_Alu="464(0)" T_Lut="1343(115)" T_Bsram="39(0)" T_Ssram="128(0)">
+<Module name="DEMO_V01_TOP" Register="49" Lut="114" T_Register="890(49)" T_Alu="496(0)" T_Lut="1119(114)" T_PADD9="1(0)" T_MULT9X9="1(0)" T_Bsram="39(0)">
  <SubModule name="u_PLL_3"/>
  <SubModule name="u_PLL_2"/>
- <SubModule name="gw_gao_inst_0" Register="506" Alu="15" Lut="620" Bsram="14" T_Register="506(506)" T_Alu="15(15)" T_Lut="620(620)" T_Bsram="14(14)"/>
- <SubModule name="u_loader" Register="235" Lut="348" Ssram="128" T_Register="246(235)" T_Alu="380(0)" T_Lut="379(348)" T_Bsram="25(0)" T_Ssram="128(128)">
-  <SubModule name="u_prom" Register="2" Lut="30" Bsram="25" T_Register="2(2)" T_Lut="30(30)" T_Bsram="25(25)"/>
-  <SubModule name="u_gaus_blur_filter" Register="9" Alu="380" Lut="1" T_Register="9(9)" T_Alu="380(380)" T_Lut="1(1)"/>
+ <SubModule name="gw_gao_inst_0" Register="502" Alu="15" Lut="613" Bsram="14" T_Register="502(502)" T_Alu="15(15)" T_Lut="613(613)" T_Bsram="14(14)"/>
+ <SubModule name="u_loader" Register="253" Alu="32" Lut="133" PADD9="1" MULT9X9="1" T_Register="266(253)" T_Alu="412(32)" T_Lut="163(133)" T_PADD9="1(1)" T_MULT9X9="1(1)" T_Bsram="25(0)">
+  <SubModule name="u_gaus_blur_filter" Register="9" Alu="380" T_Register="9(9)" T_Alu="380(380)"/>
+  <SubModule name="u_gowin_prom" Register="4" Lut="30" Bsram="25" T_Register="4(4)" T_Lut="30(30)" T_Bsram="25(25)"/>
  </SubModule>
  <SubModule name="u_DVI_TX_Top" Register="73" Alu="69" Lut="229" T_Register="73(73)" T_Alu="69(69)" T_Lut="229(229)"/>
 </Module>
