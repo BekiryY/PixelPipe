@@ -3,9 +3,9 @@ from pathlib import Path
 
 # Configuration
 hex_path = Path(r"image_rom.hex")
-out_path_core = Path(r"..\\fpga\\IMG_FILTER_DISPLAY\\src\\lenna_320x320_grayscale")
+out_path_core = Path(r"..\\fpga\\IMG_FILTER_DISPLAY\\src\\prom")
 out_path = out_path_core.with_suffix(".mi")
-DEPTH = 6471  # Address Depth
+DEPTH = 3758  # Address Depth
 WIDTH = 13*8  # Data Width in bits
 
 all_hex_chars = ""
