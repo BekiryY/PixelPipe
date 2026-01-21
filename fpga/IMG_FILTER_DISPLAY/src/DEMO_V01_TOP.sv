@@ -103,13 +103,13 @@ assign data_out_controlled = data_request ? data_out : 8'b0;
 
 
 //----------------------------------------------------
-localparam H_ACTIVE = 640;
-localparam H_TOTAL  = 800; // 640 + FrontPorch + Sync + BackPorch
-localparam V_ACTIVE = 480;
-localparam V_TOTAL  = 525; // 480 + FrontPorch + Sync + BackPorch
-
+localparam H_ACTIVE    = 1280;
+localparam H_TOTAL     = 1650; // 1280 + 110 (FP) + 40 (Sync) + 220 (BP)
+localparam V_ACTIVE    = 720;
+localparam V_TOTAL     = 750;  // 720 + 5 (FP) + 5 (Sync) + 20 (BP)
 logic [11:0]cnt_hor;
 logic [11:0]cnt_ver;
+
 //counter for 225 horizontal
 always @(posedge sys_clk or negedge hdmi4_rst_n) begin
     if(!hdmi4_rst_n)
@@ -137,8 +137,8 @@ end
     assign tp0_de_in = (cnt_hor < H_ACTIVE) && (cnt_ver < V_ACTIVE);
     // Syncs: Usually active low pulses somewhere in the blanking area
 // (Simplified example)
-    assign tp0_hs_in = (cnt_hor >= H_ACTIVE + 16 && cnt_hor < H_ACTIVE + 16 + 96) ? 1'b0 : 1'b1; 
-    assign tp0_vs_in = (cnt_ver >= V_ACTIVE + 10 && cnt_ver < V_ACTIVE + 10 + 2)  ? 1'b0 : 1'b1;
+    assign tp0_hs_in = (cnt_hor >= H_ACTIVE + 110 && cnt_hor < H_ACTIVE + 110 + 40) ? 1'b1 : 1'b0; 
+    assign tp0_vs_in = (cnt_ver >= V_ACTIVE + 5   && cnt_ver < V_ACTIVE + 5 + 5)    ? 1'b1 : 1'b0;
 
 // Request data when we are inside the 225x225 image area
 // Image shifted to (50, 50)
@@ -154,8 +154,6 @@ assign data_request = (cnt_hor >= IMG_START_X && cnt_hor < IMG_START_X + 225) &&
 
 assign hdmi4_rst_n = rst_n & pll_lock;
 
-defparam u_clkdiv.DIV_MODE="5";
-defparam u_clkdiv.GSREN="false";
 
 
 DVI_TX_Top u_DVI_TX_Top

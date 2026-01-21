@@ -18,7 +18,7 @@
         <File path="src/dk_video.cst" type="file.cst" enable="1"/>
         <File path="src/pinmap.cst" type="file.cst" enable="0"/>
         <File path="src/IMG_FILTER_DISPLAY.sdc" type="file.sdc" enable="1"/>
-        <File path="src/IMG_FILTER_DISPLAY.rao" type="file.gao" enable="1"/>
+        <File path="src/IMG_FILTER_DISPLAY.rao" type="file.gao" enable="0"/>
         <File path="src/prom.mi" type="file.other" enable="1"/>
     </FileList>
 </Project>

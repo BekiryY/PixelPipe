@@ -2,36 +2,8 @@
 <GAO_CONFIG>
     <Version>3.0</Version>
     <Mode>Standard</Mode>
-    <AoCore index="0" sample_clock="sys_clk" trig_type="0" storage_depth="4096" window_num="1" capture_amount="4096" implementation="0" trigger_pos="0" module_name="DEMO_V01_TOP" force_trigger_by_falling_edge="false" capture_init_data_enabled="true">
+    <AoCore index="0" sample_clock="pix_clk" trig_type="0" storage_depth="512" window_num="1" capture_amount="512" implementation="2" trigger_pos="0" module_name="DEMO_V01_TOP" force_trigger_by_falling_edge="false" capture_init_data_enabled="true">
         <SignalList>
-            <Bus capture_enable="true" name="cnt_hor[11:0]">
-                <Signal>cnt_hor[11]</Signal>
-                <Signal>cnt_hor[10]</Signal>
-                <Signal>cnt_hor[9]</Signal>
-                <Signal>cnt_hor[8]</Signal>
-                <Signal>cnt_hor[7]</Signal>
-                <Signal>cnt_hor[6]</Signal>
-                <Signal>cnt_hor[5]</Signal>
-                <Signal>cnt_hor[4]</Signal>
-                <Signal>cnt_hor[3]</Signal>
-                <Signal>cnt_hor[2]</Signal>
-                <Signal>cnt_hor[1]</Signal>
-                <Signal>cnt_hor[0]</Signal>
-            </Bus>
-            <Bus capture_enable="true" name="cnt_ver[11:0]">
-                <Signal>cnt_ver[11]</Signal>
-                <Signal>cnt_ver[10]</Signal>
-                <Signal>cnt_ver[9]</Signal>
-                <Signal>cnt_ver[8]</Signal>
-                <Signal>cnt_ver[7]</Signal>
-                <Signal>cnt_ver[6]</Signal>
-                <Signal>cnt_ver[5]</Signal>
-                <Signal>cnt_ver[4]</Signal>
-                <Signal>cnt_ver[3]</Signal>
-                <Signal>cnt_ver[2]</Signal>
-                <Signal>cnt_ver[1]</Signal>
-                <Signal>cnt_ver[0]</Signal>
-            </Bus>
             <Signal capture_enable="true">tp0_vs_in</Signal>
             <Signal capture_enable="true">tp0_hs_in</Signal>
             <Signal capture_enable="true">tp0_de_in</Signal>
@@ -61,15 +33,35 @@
             <Signal capture_enable="true">u_loader/fifo_wr</Signal>
             <Signal capture_enable="true">u_loader/fifo_empty</Signal>
             <Signal capture_enable="true">u_loader/i_next</Signal>
-            <Bus capture_enable="true" name="data_out_controlled[7:0]">
-                <Signal>data_out_controlled[7]</Signal>
-                <Signal>data_out_controlled[6]</Signal>
-                <Signal>data_out_controlled[5]</Signal>
-                <Signal>data_out_controlled[4]</Signal>
-                <Signal>data_out_controlled[3]</Signal>
-                <Signal>data_out_controlled[2]</Signal>
-                <Signal>data_out_controlled[1]</Signal>
-                <Signal>data_out_controlled[0]</Signal>
+            <Bus capture_enable="true" name="cnt_hor[12:0]">
+                <Signal>cnt_hor[12]</Signal>
+                <Signal>cnt_hor[11]</Signal>
+                <Signal>cnt_hor[10]</Signal>
+                <Signal>cnt_hor[9]</Signal>
+                <Signal>cnt_hor[8]</Signal>
+                <Signal>cnt_hor[7]</Signal>
+                <Signal>cnt_hor[6]</Signal>
+                <Signal>cnt_hor[5]</Signal>
+                <Signal>cnt_hor[4]</Signal>
+                <Signal>cnt_hor[3]</Signal>
+                <Signal>cnt_hor[2]</Signal>
+                <Signal>cnt_hor[1]</Signal>
+                <Signal>cnt_hor[0]</Signal>
+            </Bus>
+            <Bus capture_enable="true" name="cnt_ver[12:0]">
+                <Signal>cnt_ver[12]</Signal>
+                <Signal>cnt_ver[11]</Signal>
+                <Signal>cnt_ver[10]</Signal>
+                <Signal>cnt_ver[9]</Signal>
+                <Signal>cnt_ver[8]</Signal>
+                <Signal>cnt_ver[7]</Signal>
+                <Signal>cnt_ver[6]</Signal>
+                <Signal>cnt_ver[5]</Signal>
+                <Signal>cnt_ver[4]</Signal>
+                <Signal>cnt_ver[3]</Signal>
+                <Signal>cnt_ver[2]</Signal>
+                <Signal>cnt_ver[1]</Signal>
+                <Signal>cnt_ver[0]</Signal>
             </Bus>
         </SignalList>
         <Triggers>
@@ -120,5 +112,5 @@
             <Expression>M0|M1</Expression>
         </Expressions>
     </AoCore>
-    <GAO_ID>1100100000010101</GAO_ID>
+    <GAO_ID>1000001000000110</GAO_ID>
 </GAO_CONFIG>

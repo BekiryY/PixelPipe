@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Module name="DEMO_V01_TOP" Register="49" Lut="119" T_Register="690(49)" T_Alu="101(0)" T_Lut="1168(119)" T_Bsram="40(0)" T_Ssram="32(0)">
+<Module name="DEMO_V01_TOP" Register="49" Lut="131" T_Register="176(49)" T_Alu="78(0)" T_Lut="544(131)" T_Bsram="25(0)" T_Ssram="32(0)">
  <SubModule name="u_PLL_3"/>
  <SubModule name="u_PLL_2"/>
- <SubModule name="u_loader" Register="52" Alu="17" Lut="163" Ssram="32" T_Register="54(52)" T_Alu="17(17)" T_Lut="193(163)" T_Bsram="25(0)" T_Ssram="32(32)">
+ <SubModule name="u_loader" Register="52" Alu="9" Lut="154" Ssram="32" T_Register="54(52)" T_Alu="9(9)" T_Lut="184(154)" T_Bsram="25(0)" T_Ssram="32(32)">
   <SubModule name="u_prom" Register="2" Lut="30" Bsram="25" T_Register="2(2)" T_Lut="30(30)" T_Bsram="25(25)"/>
  </SubModule>
- <SubModule name="gw_gao_inst_0" Register="514" Alu="15" Lut="627" Bsram="15" T_Register="514(514)" T_Alu="15(15)" T_Lut="627(627)" T_Bsram="15(15)"/>
  <SubModule name="u_DVI_TX_Top" Register="73" Alu="69" Lut="229" T_Register="73(73)" T_Alu="69(69)" T_Lut="229(229)"/>
 </Module>

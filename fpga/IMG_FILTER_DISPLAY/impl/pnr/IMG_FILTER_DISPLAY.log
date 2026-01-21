@@ -1,16 +1,13 @@
-Reading netlist file: "C:\Users\BEK\repos\customGPU\fpga\IMG_FILTER_DISPLAY\impl\gwsynthesis\IMG_FILTER_DISPLAY.vg"
-Parsing netlist file "C:\Users\BEK\repos\customGPU\fpga\IMG_FILTER_DISPLAY\impl\gwsynthesis\IMG_FILTER_DISPLAY.vg" completed
+Reading netlist file: "C:\Users\BEK\repos\PixelPipe\fpga\IMG_FILTER_DISPLAY\impl\gwsynthesis\IMG_FILTER_DISPLAY.vg"
+Parsing netlist file "C:\Users\BEK\repos\PixelPipe\fpga\IMG_FILTER_DISPLAY\impl\gwsynthesis\IMG_FILTER_DISPLAY.vg" completed
 Processing netlist completed
-Reading constraint file: "C:\Users\BEK\repos\customGPU\fpga\IMG_FILTER_DISPLAY\src\dk_video.cst"
+Reading constraint file: "C:\Users\BEK\repos\PixelPipe\fpga\IMG_FILTER_DISPLAY\src\dk_video.cst"
 Physical Constraint parsed completed
 Running placement......
 [10%] Placement Phase 0 completed
 [20%] Placement Phase 1 completed
 [30%] Placement Phase 2 completed
-WARN  (TA1132) :  'tck_pad_i' was determined to be a clock but was not created.
 WARN  (TA1132) :  'u_CLKDIV/CLKOUT.default_gen_clk' was determined to be a clock but was not created.
-WARN  (TA1117) : Can't calculate clocks' relationship between: "tck_pad_i" and "u_PLL_3/rpll_inst/CLKOUT.default_gen_clk"
-WARN  (TA1117) : Can't calculate clocks' relationship between: "u_PLL_3/rpll_inst/CLKOUT.default_gen_clk" and "tck_pad_i"
 [50%] Placement Phase 3 completed
 Running routing......
 [60%] Routing Phase 0 completed
@@ -24,10 +21,10 @@ Bitstream generation in progress......
 Bitstream generation completed
 Running power analysis......
 [100%] Power analysis completed
-Generate file "C:\Users\BEK\repos\customGPU\fpga\IMG_FILTER_DISPLAY\impl\pnr\IMG_FILTER_DISPLAY.power.html" completed
-Generate file "C:\Users\BEK\repos\customGPU\fpga\IMG_FILTER_DISPLAY\impl\pnr\IMG_FILTER_DISPLAY.pin.html" completed
-Generate file "C:\Users\BEK\repos\customGPU\fpga\IMG_FILTER_DISPLAY\impl\pnr\IMG_FILTER_DISPLAY.rpt.html" completed
-Generate file "C:\Users\BEK\repos\customGPU\fpga\IMG_FILTER_DISPLAY\impl\pnr\IMG_FILTER_DISPLAY.rpt.txt" completed
-Generate file "C:\Users\BEK\repos\customGPU\fpga\IMG_FILTER_DISPLAY\impl\pnr\IMG_FILTER_DISPLAY.tr.html" completed
-Tue Jan  6 01:15:33 2026
+Generate file "C:\Users\BEK\repos\PixelPipe\fpga\IMG_FILTER_DISPLAY\impl\pnr\IMG_FILTER_DISPLAY.power.html" completed
+Generate file "C:\Users\BEK\repos\PixelPipe\fpga\IMG_FILTER_DISPLAY\impl\pnr\IMG_FILTER_DISPLAY.pin.html" completed
+Generate file "C:\Users\BEK\repos\PixelPipe\fpga\IMG_FILTER_DISPLAY\impl\pnr\IMG_FILTER_DISPLAY.rpt.html" completed
+Generate file "C:\Users\BEK\repos\PixelPipe\fpga\IMG_FILTER_DISPLAY\impl\pnr\IMG_FILTER_DISPLAY.rpt.txt" completed
+Generate file "C:\Users\BEK\repos\PixelPipe\fpga\IMG_FILTER_DISPLAY\impl\pnr\IMG_FILTER_DISPLAY.tr.html" completed
+Thu Jan 22 00:56:39 2026
 

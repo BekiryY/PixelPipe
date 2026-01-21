@@ -1,10 +1,9 @@
--d C:\Users\BEK\repos\customGPU\fpga\IMG_FILTER_DISPLAY\impl\gwsynthesis\IMG_FILTER_DISPLAY.vg
+-d C:\Users\BEK\repos\PixelPipe\fpga\IMG_FILTER_DISPLAY\impl\gwsynthesis\IMG_FILTER_DISPLAY.vg
 -p GW2A-18C-PBGA256-8
 -pn GW2A-LV18PG256C8/I7
--cst C:\Users\BEK\repos\customGPU\fpga\IMG_FILTER_DISPLAY\src\dk_video.cst
--cfg C:\Users\BEK\repos\customGPU\fpga\IMG_FILTER_DISPLAY\impl\pnr\device.cfg
--sdc C:\Users\BEK\repos\customGPU\fpga\IMG_FILTER_DISPLAY\src\IMG_FILTER_DISPLAY.sdc
--gao_crc 1100100000010101
+-cst C:\Users\BEK\repos\PixelPipe\fpga\IMG_FILTER_DISPLAY\src\dk_video.cst
+-cfg C:\Users\BEK\repos\PixelPipe\fpga\IMG_FILTER_DISPLAY\impl\pnr\device.cfg
+-sdc C:\Users\BEK\repos\PixelPipe\fpga\IMG_FILTER_DISPLAY\src\IMG_FILTER_DISPLAY.sdc
 -bit
 -tr
 -ph
@@ -17,4 +16,3 @@
 -correct_hold 1
 -route_maxfan 23
 -global_freq 100.000
--rtl_gao

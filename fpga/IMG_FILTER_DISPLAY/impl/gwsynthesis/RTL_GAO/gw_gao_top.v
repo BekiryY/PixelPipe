@@ -1,28 +1,4 @@
 module gw_gao(
-    \cnt_hor[11] ,
-    \cnt_hor[10] ,
-    \cnt_hor[9] ,
-    \cnt_hor[8] ,
-    \cnt_hor[7] ,
-    \cnt_hor[6] ,
-    \cnt_hor[5] ,
-    \cnt_hor[4] ,
-    \cnt_hor[3] ,
-    \cnt_hor[2] ,
-    \cnt_hor[1] ,
-    \cnt_hor[0] ,
-    \cnt_ver[11] ,
-    \cnt_ver[10] ,
-    \cnt_ver[9] ,
-    \cnt_ver[8] ,
-    \cnt_ver[7] ,
-    \cnt_ver[6] ,
-    \cnt_ver[5] ,
-    \cnt_ver[4] ,
-    \cnt_ver[3] ,
-    \cnt_ver[2] ,
-    \cnt_ver[1] ,
-    \cnt_ver[0] ,
     tp0_vs_in,
     tp0_hs_in,
     tp0_de_in,
@@ -48,47 +24,41 @@ module gw_gao(
     \u_loader/fifo_wr ,
     \u_loader/fifo_empty ,
     \u_loader/i_next ,
-    \data_out_controlled[7] ,
-    \data_out_controlled[6] ,
-    \data_out_controlled[5] ,
-    \data_out_controlled[4] ,
-    \data_out_controlled[3] ,
-    \data_out_controlled[2] ,
-    \data_out_controlled[1] ,
-    \data_out_controlled[0] ,
+    \cnt_hor[12] ,
+    \cnt_hor[11] ,
+    \cnt_hor[10] ,
+    \cnt_hor[9] ,
+    \cnt_hor[8] ,
+    \cnt_hor[7] ,
+    \cnt_hor[6] ,
+    \cnt_hor[5] ,
+    \cnt_hor[4] ,
+    \cnt_hor[3] ,
+    \cnt_hor[2] ,
+    \cnt_hor[1] ,
+    \cnt_hor[0] ,
+    \cnt_ver[12] ,
+    \cnt_ver[11] ,
+    \cnt_ver[10] ,
+    \cnt_ver[9] ,
+    \cnt_ver[8] ,
+    \cnt_ver[7] ,
+    \cnt_ver[6] ,
+    \cnt_ver[5] ,
+    \cnt_ver[4] ,
+    \cnt_ver[3] ,
+    \cnt_ver[2] ,
+    \cnt_ver[1] ,
+    \cnt_ver[0] ,
     \run_cnt[24] ,
     rst_n,
-    sys_clk,
+    pix_clk,
     tms_pad_i,
     tck_pad_i,
     tdi_pad_i,
     tdo_pad_o
 );
 
-input \cnt_hor[11] ;
-input \cnt_hor[10] ;
-input \cnt_hor[9] ;
-input \cnt_hor[8] ;
-input \cnt_hor[7] ;
-input \cnt_hor[6] ;
-input \cnt_hor[5] ;
-input \cnt_hor[4] ;
-input \cnt_hor[3] ;
-input \cnt_hor[2] ;
-input \cnt_hor[1] ;
-input \cnt_hor[0] ;
-input \cnt_ver[11] ;
-input \cnt_ver[10] ;
-input \cnt_ver[9] ;
-input \cnt_ver[8] ;
-input \cnt_ver[7] ;
-input \cnt_ver[6] ;
-input \cnt_ver[5] ;
-input \cnt_ver[4] ;
-input \cnt_ver[3] ;
-input \cnt_ver[2] ;
-input \cnt_ver[1] ;
-input \cnt_ver[0] ;
 input tp0_vs_in;
 input tp0_hs_in;
 input tp0_de_in;
@@ -114,46 +84,40 @@ input \u_loader/prom_addr[0] ;
 input \u_loader/fifo_wr ;
 input \u_loader/fifo_empty ;
 input \u_loader/i_next ;
-input \data_out_controlled[7] ;
-input \data_out_controlled[6] ;
-input \data_out_controlled[5] ;
-input \data_out_controlled[4] ;
-input \data_out_controlled[3] ;
-input \data_out_controlled[2] ;
-input \data_out_controlled[1] ;
-input \data_out_controlled[0] ;
+input \cnt_hor[12] ;
+input \cnt_hor[11] ;
+input \cnt_hor[10] ;
+input \cnt_hor[9] ;
+input \cnt_hor[8] ;
+input \cnt_hor[7] ;
+input \cnt_hor[6] ;
+input \cnt_hor[5] ;
+input \cnt_hor[4] ;
+input \cnt_hor[3] ;
+input \cnt_hor[2] ;
+input \cnt_hor[1] ;
+input \cnt_hor[0] ;
+input \cnt_ver[12] ;
+input \cnt_ver[11] ;
+input \cnt_ver[10] ;
+input \cnt_ver[9] ;
+input \cnt_ver[8] ;
+input \cnt_ver[7] ;
+input \cnt_ver[6] ;
+input \cnt_ver[5] ;
+input \cnt_ver[4] ;
+input \cnt_ver[3] ;
+input \cnt_ver[2] ;
+input \cnt_ver[1] ;
+input \cnt_ver[0] ;
 input \run_cnt[24] ;
 input rst_n;
-input sys_clk;
+input pix_clk;
 input tms_pad_i;
 input tck_pad_i;
 input tdi_pad_i;
 output tdo_pad_o;
 
-wire \cnt_hor[11] ;
-wire \cnt_hor[10] ;
-wire \cnt_hor[9] ;
-wire \cnt_hor[8] ;
-wire \cnt_hor[7] ;
-wire \cnt_hor[6] ;
-wire \cnt_hor[5] ;
-wire \cnt_hor[4] ;
-wire \cnt_hor[3] ;
-wire \cnt_hor[2] ;
-wire \cnt_hor[1] ;
-wire \cnt_hor[0] ;
-wire \cnt_ver[11] ;
-wire \cnt_ver[10] ;
-wire \cnt_ver[9] ;
-wire \cnt_ver[8] ;
-wire \cnt_ver[7] ;
-wire \cnt_ver[6] ;
-wire \cnt_ver[5] ;
-wire \cnt_ver[4] ;
-wire \cnt_ver[3] ;
-wire \cnt_ver[2] ;
-wire \cnt_ver[1] ;
-wire \cnt_ver[0] ;
 wire tp0_vs_in;
 wire tp0_hs_in;
 wire tp0_de_in;
@@ -179,17 +143,35 @@ wire \u_loader/prom_addr[0] ;
 wire \u_loader/fifo_wr ;
 wire \u_loader/fifo_empty ;
 wire \u_loader/i_next ;
-wire \data_out_controlled[7] ;
-wire \data_out_controlled[6] ;
-wire \data_out_controlled[5] ;
-wire \data_out_controlled[4] ;
-wire \data_out_controlled[3] ;
-wire \data_out_controlled[2] ;
-wire \data_out_controlled[1] ;
-wire \data_out_controlled[0] ;
+wire \cnt_hor[12] ;
+wire \cnt_hor[11] ;
+wire \cnt_hor[10] ;
+wire \cnt_hor[9] ;
+wire \cnt_hor[8] ;
+wire \cnt_hor[7] ;
+wire \cnt_hor[6] ;
+wire \cnt_hor[5] ;
+wire \cnt_hor[4] ;
+wire \cnt_hor[3] ;
+wire \cnt_hor[2] ;
+wire \cnt_hor[1] ;
+wire \cnt_hor[0] ;
+wire \cnt_ver[12] ;
+wire \cnt_ver[11] ;
+wire \cnt_ver[10] ;
+wire \cnt_ver[9] ;
+wire \cnt_ver[8] ;
+wire \cnt_ver[7] ;
+wire \cnt_ver[6] ;
+wire \cnt_ver[5] ;
+wire \cnt_ver[4] ;
+wire \cnt_ver[3] ;
+wire \cnt_ver[2] ;
+wire \cnt_ver[1] ;
+wire \cnt_ver[0] ;
 wire \run_cnt[24] ;
 wire rst_n;
-wire sys_clk;
+wire pix_clk;
 wire tms_pad_i;
 wire tck_pad_i;
 wire tdi_pad_i;
@@ -265,8 +247,8 @@ ao_top_0  u_la0_top(
     .control(control0[9:0]),
     .trig0_i(\run_cnt[24] ),
     .trig1_i(rst_n),
-    .data_i({\cnt_hor[11] ,\cnt_hor[10] ,\cnt_hor[9] ,\cnt_hor[8] ,\cnt_hor[7] ,\cnt_hor[6] ,\cnt_hor[5] ,\cnt_hor[4] ,\cnt_hor[3] ,\cnt_hor[2] ,\cnt_hor[1] ,\cnt_hor[0] ,\cnt_ver[11] ,\cnt_ver[10] ,\cnt_ver[9] ,\cnt_ver[8] ,\cnt_ver[7] ,\cnt_ver[6] ,\cnt_ver[5] ,\cnt_ver[4] ,\cnt_ver[3] ,\cnt_ver[2] ,\cnt_ver[1] ,\cnt_ver[0] ,tp0_vs_in,tp0_hs_in,tp0_de_in,\u_loader/o_valid ,\u_loader/prom_ce ,\u_loader/prom_dout[7] ,\u_loader/prom_dout[6] ,\u_loader/prom_dout[5] ,\u_loader/prom_dout[4] ,\u_loader/prom_dout[3] ,\u_loader/prom_dout[2] ,\u_loader/prom_dout[1] ,\u_loader/prom_dout[0] ,\u_loader/prom_valid_q ,\u_loader/prom_addr[7] ,\u_loader/prom_addr[6] ,\u_loader/prom_addr[5] ,\u_loader/prom_addr[4] ,\u_loader/prom_addr[3] ,\u_loader/prom_addr[2] ,\u_loader/prom_addr[1] ,\u_loader/prom_addr[0] ,\u_loader/fifo_wr ,\u_loader/fifo_empty ,\u_loader/i_next ,\data_out_controlled[7] ,\data_out_controlled[6] ,\data_out_controlled[5] ,\data_out_controlled[4] ,\data_out_controlled[3] ,\data_out_controlled[2] ,\data_out_controlled[1] ,\data_out_controlled[0] }),
-    .clk_i(sys_clk)
+    .data_i({tp0_vs_in,tp0_hs_in,tp0_de_in,\u_loader/o_valid ,\u_loader/prom_ce ,\u_loader/prom_dout[7] ,\u_loader/prom_dout[6] ,\u_loader/prom_dout[5] ,\u_loader/prom_dout[4] ,\u_loader/prom_dout[3] ,\u_loader/prom_dout[2] ,\u_loader/prom_dout[1] ,\u_loader/prom_dout[0] ,\u_loader/prom_valid_q ,\u_loader/prom_addr[7] ,\u_loader/prom_addr[6] ,\u_loader/prom_addr[5] ,\u_loader/prom_addr[4] ,\u_loader/prom_addr[3] ,\u_loader/prom_addr[2] ,\u_loader/prom_addr[1] ,\u_loader/prom_addr[0] ,\u_loader/fifo_wr ,\u_loader/fifo_empty ,\u_loader/i_next ,\cnt_hor[12] ,\cnt_hor[11] ,\cnt_hor[10] ,\cnt_hor[9] ,\cnt_hor[8] ,\cnt_hor[7] ,\cnt_hor[6] ,\cnt_hor[5] ,\cnt_hor[4] ,\cnt_hor[3] ,\cnt_hor[2] ,\cnt_hor[1] ,\cnt_hor[0] ,\cnt_ver[12] ,\cnt_ver[11] ,\cnt_ver[10] ,\cnt_ver[9] ,\cnt_ver[8] ,\cnt_ver[7] ,\cnt_ver[6] ,\cnt_ver[5] ,\cnt_ver[4] ,\cnt_ver[3] ,\cnt_ver[2] ,\cnt_ver[1] ,\cnt_ver[0] }),
+    .clk_i(pix_clk)
 );
 
 endmodule
